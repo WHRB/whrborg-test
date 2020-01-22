@@ -1,7 +1,7 @@
 describe('WHRB.org Home', () => {
   beforeAll(async () => {
     await page.goto('https://whrb.org');
-  });
+  }, 10000);
 
   it('should be titled "WHRB 95.3 FM - Harvard Radio Broadcasting"', async () => {
     await expect(page.title()).resolves.toMatch('WHRB 95.3 FM - Harvard Radio Broadcasting');
